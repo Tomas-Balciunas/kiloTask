@@ -3,7 +3,10 @@
         "name": "kilo",
         "description": "kilo",
         "psr-4": {
-            "kilo\\": ["app", "interfaces", "controller"]
+            "kilo\\": ["app", "interfaces", "controller", "tests"]
         }
+    },
+    "require": {
+        "phpunit/phpunit": "^9.5"
     }
 }

@@ -26,7 +26,6 @@ class Fetch implements ReaderInterface
         if (curl_errno($ch)) {
             $msg = "Request to " . $this->url . $this->endpoint . " failed. Reason: " . curl_error($ch);
             logger($msg);
-
             return false;
         } else {
             return $response_json;
