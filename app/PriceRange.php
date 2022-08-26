@@ -18,7 +18,7 @@ class PriceRange implements OfferCollectionInterface
     public function countProducts($filter): int
     {
         foreach ($this->response as $key => $product) {
-            if ($product['price'] >= $filter[1] && $product['price'] <= $filter[2]) 
+            if ($product["price"] >= $filter[1] && $product["price"] <= $filter[2]) 
             {
                 $this->products[] = $key;
             }

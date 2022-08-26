@@ -18,7 +18,7 @@ class VendorId implements OfferCollectionInterface
     public function countProducts($filter): int
     {
         foreach($this->response as $key => $product) {
-            $product['vendorId'] != $filter[1] ?: $this->products[] = $key;
+            $product["vendorId"] != $filter[1] ?: $this->products[] = $key;
         };
 
         return count($this->products);
