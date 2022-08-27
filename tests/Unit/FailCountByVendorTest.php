@@ -3,7 +3,7 @@
 namespace tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use kilo\Controller;
+use kilo\Execute;
 
 class FailCountByVendorTest extends TestCase {
     
@@ -14,8 +14,8 @@ class FailCountByVendorTest extends TestCase {
 
         );
 
-        $data = new Controller($params);
-        $result = $data->fetch();
+        $data = new Execute($params);
+        $result = $data->callCommand();
 
         $this->assertEquals("Incorrect parameter given.", $result);
     }

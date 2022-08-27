@@ -3,7 +3,7 @@
 namespace tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use kilo\Controller;
+use kilo\Execute;
 
 class SucceedCountByVendorTest extends TestCase {
     
@@ -14,8 +14,8 @@ class SucceedCountByVendorTest extends TestCase {
 
         );
 
-        $data = new Controller($params);
-        $result = $data->fetch();
+        $data = new Execute($params);
+        $result = $data->callCommand();
 
         $this->assertStringContainsString("Amount of products found: ", $result);
     }

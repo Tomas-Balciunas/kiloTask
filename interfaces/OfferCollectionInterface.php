@@ -4,8 +4,8 @@ namespace kilo;
 
 interface OfferCollectionInterface
 {
-    public function get(string $response, $filter): int;
-    public function countProducts($filter): int;
+    public function get(string $response, $args): int;
+    public function countProducts($args): int;
 }
 
 

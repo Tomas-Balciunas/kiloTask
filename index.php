@@ -1,9 +1,9 @@
 <?php
 
-namespace kilo;
+use kilo\Execute;
 require "vendor/autoload.php";
 
 array_shift($argv);
 
-$result = new Controller($argv);
-echo $result->fetch();
+$result = new Execute($argv);
+echo $result->callCommand();
