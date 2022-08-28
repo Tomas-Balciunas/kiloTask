@@ -3,7 +3,7 @@
         "name": "kilo",
         "description": "kilo",
         "psr-4": {
-            "kilo\\": ["app", "app/productsCommandClasses", "interfaces", "controller", "tests"]
+            "kilo\\": ["app", "commandClasses", "interfaces", "controller", "tests"]
         }
     },
     "require": {
