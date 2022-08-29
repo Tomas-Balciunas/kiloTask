@@ -7,11 +7,5 @@
     <command classname="VendorId">
         <comm>count_by_vendor_id</comm>
     </command>
-    <command classname="PriceRange">
-        <comm>count_by_price_range</comm>
-    </command>
-    <command classname="VendorId">
-        <comm>count_by_vendor_id</comm>
-    </command>
 </config>
 
